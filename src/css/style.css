@@ -1,0 +1,896 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+
+/*                      ==================== HEADER ================*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+    padding: 2.5vh 0;
+    font-weight: 500;
+}
+
+.c-logo-header {
+    margin-left: 2vw;
+}
+
+.c-logo-header img {
+    width: 100%;
+}
+
+header nav {
+    margin-right: 6vw;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3vw;
+}
+
+header nav ul li a {
+    transition: 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+/*                      ============================= RESPONSIVE HEADER ================*/
+
+
+@media(max-width:768px) {
+
+    .c-logo-header {
+
+        width: 13rem;
+    }
+
+}
+
+@media(max-width:440px) {
+
+    .c-logo-header {
+
+        width: 27vw;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+    }
+
+
+
+}
+
+/*                    =========================   MAIN ==============================                                 */
+
+main {
+    margin-top: 5vh;
+
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.c-inf-main-1 {
+    padding-left: 3vw;
+    display: flex;
+}
+
+.c-inf-main-1 .description-inf-1 {
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+
+.c-inf-main-1 .description-inf-1 h1 {
+    line-height: 1.3;
+    width: 90%;
+    font-size: 2.7vw;
+
+}
+
+.c-inf-main-1 .description-inf-1 p {
+    width: 85%;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.2vw;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+
+
+}
+
+
+
+.c-inf-main-1 .description-inf-1 form .input-register {
+    padding-left: 0.5vw;
+    height: 4vh;
+    width: 23vw;
+    border-radius: 0.3rem;
+
+}
+
+.c-inf-main-1 .description-inf-1 form .btn-info-1 {
+    background: var(--Bright-Blue);
+    color: #fff;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 0.3rem;
+    margin-left: 0.5vw;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: 0.3s ease-in-out;
+}
+
+.c-inf-main-1 .description-inf-1 form .btn-info-1:hover {
+    background: var(--Bright-Blue-op);
+}
+
+.c-inf-main-1 .c-illustration-info-1 {
+    background-color: #fff;
+
+}
+
+.c-inf-main-1 .c-illustration-info-1 img {
+
+    width: 90%;
+
+}
+
+.curve-desktop {
+
+    background: url(../images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 10vh;
+    margin-top: 15vh;
+
+}
+
+.c-inf-main-2 {
+    display: flex;
+
+    background-color: #f9f8fe;
+
+    padding: 8vh 0 5vh 3vw;
+}
+
+.c-inf-main-2 .description-inf-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+}
+
+.c-inf-main-2 .description-inf-2 h2 {
+    font-size: 2.4vw;
+    margin-bottom: 2vh;
+
+}
+
+.c-inf-main-2 .description-inf-2 p {
+    font-family: 'Open sans', sans-serif;
+    width: 80%;
+    font-size: 1.1vw;
+    color: var(--Light-Gray);
+}
+
+.c-inf-main-2 .description-inf-2 a {
+    color: var(--Moderate-Cyan);
+    width: 33%;
+
+    text-shadow: 0px 0px 0.1px var(--Moderate-Cyan);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 4vh;
+    padding: 5px 0px;
+    /* Adicionar algum preenchimento para tornar a borda visível */
+    box-shadow: 0 2px 0 0 hsl(170, 45%, 43%);
+
+}
+
+.c-inf-main-2 .description-inf-2 a:hover {
+    box-shadow: 0 2px 0 0hsla(170, 45%, 43%, 0.5);
+    color: var(--Moderate-Cyan-op);
+    border-bottom: solid 1px var(--Moderate-Cyan-op);
+    text-shadow: 0px 0px 0.1px var(--Moderate-Cyan-op);
+}
+
+.c-inf-main-2 .description-inf-2 .quotes {
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 25vw;
+    padding: 3rem;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.c-inf-main-2 .description-inf-2 .quotes p {
+    line-height: 1.7;
+    width: 100%;
+    margin: 0.5vh 0 1vh 0;
+    font-size: 1vw;
+}
+
+.c-inf-main-2 .description-inf-2 .quotes .conta {
+
+    display: flex;
+    align-items: center;
+}
+
+.c-inf-main-2 .description-inf-2 .quotes .conta img {
+    border-radius: 50%;
+    width: 2.7vw;
+}
+
+.c-inf-main-2 .description-inf-2 .quotes .conta .user {
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+
+}
+
+.c-inf-main-2 .description-inf-2 .quotes .conta .user p {
+    font-size: 1.1rem;
+    color: var(--Light-Gray);
+}
+
+.c-inf-main-2 .c-illustration-info-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-inf-main-2 .c-illustration-info-2 img {
+    width: 70%;
+    height: 80%;
+
+}
+
+/*                    ================== Responsive Main  ======================  */
+
+@media (min-width:1920px) {
+    .c-inf-main-1 .description-inf-1 h1 {
+
+        font-size: 2.3vw;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .input-register::placeholder {
+        font-size: 1vw;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 a {
+        width: 10vw;
+    }
+
+}
+
+@media (max-width:1265px) {
+
+    .c-inf-main-1 .c-illustration-info-1 {
+        width: 95%;
+    }
+
+    .c-inf-main-2 .description-inf-2 h2 {
+        width: 45vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 p {
+        font-family: 'Open sans', sans-serif;
+        text-shadow: 0px 0px 0.1px rgb(0, 0, 0);
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .c-inf-main-2 .description-inf-2 a {
+
+        width: 19vw;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes p {
+        font-size: 1.1vw;
+
+    }
+
+    .c-inf-main-2 .c-illustration-info-2 img {
+        width: 85%;
+        height: 75%;
+    }
+
+}
+
+@media (max-width:992px) {
+    .c-inf-main-1 .description-inf-1 h1 {
+        width: 90%;
+        font-size: 2.8vw;
+
+    }
+
+    .c-inf-main-1 .description-inf-1 p {
+        width: 90%;
+
+        font-size: 1.4vw;
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    }
+
+    .c-inf-main-1 .description-inf-1 form .input-register {
+
+        width: 26vw;
+
+    }
+
+    .c-inf-main-1 .description-inf-1 form .btn-info-1 {
+        width: 17vw;
+        font-size: 1.5vw;
+    }
+
+    .c-inf-main-1 .c-illustration-info-1 {
+        position: relative;
+        top: 5vh;
+
+    }
+
+    .c-inf-main-1 .c-illustration-info-1 img {
+        width: 90%;
+    }
+
+    .c-inf-main-2 .description-inf-2 {
+        width: 100%;
+    }
+
+    .c-inf-main-2 .description-inf-2 h2 {
+        width: 55vw;
+        font-size: 2.5rem;
+    }
+
+    .c-inf-main-2 .description-inf-2 p {
+        width: 75%;
+        font-size: 1.2rem;
+    }
+
+    .c-inf-main-2 .description-inf-2 a {
+        width: 22vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes {
+
+        width: 35vw;
+        padding: 2.5rem;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes p {
+        font-size: 1.3vw;
+    }
+
+    .c-inf-main-2 .c-illustration-info-2 img {
+        position: relative;
+        right: 5vw;
+        bottom: 4vh;
+        width: 110%;
+        height: 65%;
+    }
+
+
+
+}
+
+@media (max-width:768px) {
+    .c-inf-main-1 {
+        padding-left: 3vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .c-inf-main-1 .c-illustration-info-1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+    }
+
+    .c-inf-main-1 .c-illustration-info-1 img {
+        width: 90%;
+    }
+
+    .c-inf-main-1 .description-inf-1 {
+        align-items: center;
+    }
+
+    .c-inf-main-1 .description-inf-1 h1 {
+        text-align: center;
+        width: 90%;
+        padding: 0 1.5vw 0 1.5vw;
+        font-size: 6.4vw;
+    }
+
+    .c-inf-main-1 .description-inf-1 p {
+        text-align: center;
+        width: 80%;
+        font-size: 3.3vw;
+        margin-top: 2vh;
+        padding: 0 2vw 0 4.5vw;
+    }
+
+    .c-inf-main-1 .description-inf-1 .form-main1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .input-register {
+        width: 76vw;
+        height: 5vh;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .input-register::placeholder {
+        position: relative;
+        left: 3vw;
+        font-size: 2vw;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .btn-info-1 {
+        width: 76vw;
+        font-size: 2vw;
+        height: 5vh;
+    }
+
+    .curve-desktop {
+        background: url(../images/bg-curve-mobile.svg) no-repeat;
+        background-size: 100% 100%;
+        height: 10vh;
+        margin-top: 18vh;
+        position: relative;
+        top: 2vh;
+    }
+
+    .c-inf-main-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #f9f8fe;
+        padding: 8vh 0 5vh 3vw;
+    }
+
+    .c-inf-main-2 .c-illustration-info-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-inf-main-2 .c-illustration-info-2 img {
+        position: relative;
+        right: 0vw;
+        bottom: 0vh;
+        width: 90%;
+        height: 65%;
+    }
+
+    .c-inf-main-2 .description-inf-2 {
+        align-items: center;
+        margin-top: 8vh;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 h2 {
+        display: flex;
+        justify-content: center;
+        width: 75vw;
+        font-size: 2.3rem;
+    }
+
+    .c-inf-main-2 .description-inf-2 p {
+        width: 90%;
+        font-size: 1.6rem;
+        text-shadow: none;
+    }
+
+    .c-inf-main-2 .description-inf-2 a {
+        margin-top: 4vh;
+        width: 34vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes {
+        width: 55vw;
+        margin: 3vh 0 4vh 0;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes p {
+        font-size: 1.6vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta img {
+        border-radius: 50%;
+        width: 4.5vw;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .c-inf-main-1 .description-inf-1 form .input-register::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .btn-info-1 {
+        font-size: 1.5rem;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 h2 {
+        font-size: 4.5vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 a {
+        margin-top: 4vh;
+        width: 17rem;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes {
+        width: 80vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes p {
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta .user p {
+        font-size: 1.1rem;
+        color: black;
+    }
+}
+
+/*                        ===============Container de Resgistro  ===================== */
+
+.container-register {
+    display: flex;
+    background: var(--Very-Dark-Blue-op);
+    padding: 7vh 1rem 5vh 0;
+    font-family: 'Open sans', sans-serif;
+
+}
+
+.container-register .description-register {
+    width: 50vw;
+    padding-left: 3vw;
+}
+
+.container-register .description-register h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+.container-register .description-register p {
+    font-size: 1.3rem;
+    color: #fff;
+    width: 65%;
+    letter-spacing: 0.1rem;
+
+}
+
+.container-register .form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-left: 10vw;
+}
+
+.container-register .form-register .input-register {
+    padding-left: 0.5vw;
+    height: 4vh;
+    width: 30vw;
+    border-radius: 0.5rem;
+
+}
+
+.container-register .form-register .input-register::placeholder {
+    padding-left: 0.5vw;
+}
+
+.container-register .form-register .btn-register-1 {
+    background: var(--Bright-Blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    width: 16vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.container-register .form-register .btn-register-1:hover {
+    background: var(--Bright-Blue-op2);
+
+}
+
+@media (max-width:1260px) {
+
+    .container-register .description-register p {
+        font-size: 1.2rem;
+        width: 85%;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        height: 4vh;
+    }
+}
+
+@media (max-width:1080px) {
+    .container-register .description-register p {
+        width: 100%;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        font-size: 1.2rem;
+        width: 17vw;
+    }
+}
+
+@media (max-width:768px) {
+    .container-register {
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0 7vh 0;
+    }
+
+    .container-register .description-register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        width: auto;
+        padding: 0vh 0 0vh 0;
+        margin-bottom: 3vh;
+    }
+
+    .container-register .description-register h4 {
+        font-size: 2.3rem;
+    }
+
+    .container-register .description-register p {
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container-register .form-register {
+        margin-left: 0;
+    }
+
+    .container-register .form-register .input-register {
+        width: 40vw;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width:540px) {
+    .container-register .description-register p {
+        width: 75%;
+
+    }
+
+    .container-register .form-register .input-register {
+        width: 60vw;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        width: 60vw;
+    }
+
+
+}
+
+@media (max-width:440px) {
+    .container-register .description-register p {
+        font-size: 3.5vw;
+        width: 85%;
+
+    }
+
+    .container-register .form-register .input-register {
+        width: 70vw;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        width: 70vw;
+    }
+
+}
+
+
+footer {
+    display: grid;
+    padding: 4vh 0 4vh 3vw;
+    background: var(--Very-Dark-Blue);
+    grid-template-areas:
+        "logo-f . ."
+        "contato sobre social ";
+    grid-row-gap: 2vh;
+
+}
+
+footer .logo-footer {
+    grid-area: logo-f;
+    /* filter: hue-rotate(200deg);
+    filter: invert(100%); */
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
+footer .contato {
+    grid-area: contato;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 1.3rem;
+}
+
+footer .contato .phone-f,
+footer .contato .email-f {
+    position: relative;
+    padding-left: 3vw;
+
+}
+
+
+
+footer .contato .phone-f::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/icon-phone.svg);
+    background-repeat: no-repeat;
+
+}
+
+footer .contato .email-f::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+
+}
+
+footer .sobre-empresa {
+    grid-area: sobre;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2vh;
+    font-size: 1.3rem;
+}
+
+footer .sobre-empresa li a {
+    transition: 0.3s ease-in-out;
+}
+
+footer .sobre-empresa li a:hover {
+    zoom: 110%;
+    color: var(--Desaturated-Blue);
+}
+
+footer .social {
+    grid-area: social;
+    display: flex;
+    gap: 2vw;
+
+}
+
+footer .social i {
+    transition: 0.4s ease-in-out;
+
+
+
+}
+
+footer .social i:hover {
+    color: var(--Desaturated-Blue);
+    transform: scale(1.4);
+}
+
+/* ===================RESPONSIVE FOOTER ========================*/
+@media (min-width:1440px) {
+
+    footer .contato .phone-f,
+    footer .contato .email-f {
+        padding-left: 2vw;
+    }
+}
+
+@media(max-width:768px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 4vh 0 4vh 5vw;
+
+    }
+
+
+    footer .logo-footer {
+        width: 20rem;
+        margin: 3vh 0 3vh 0;
+    }
+
+    footer .contato .phone-f,
+    footer .contato .email-f {
+        padding-left: 3rem;
+    }
+
+
+    footer .sobre-empresa {
+        display: grid;
+        margin: 3vh 0 3vh 0;
+        grid-template-areas:
+
+            "about"
+            "jobs"
+            "press"
+            "blog"
+            "."
+            "contact"
+            "terms"
+            "privacy"
+        ;
+
+    }
+
+    footer ul .about-f {
+        grid-area: about;
+    }
+
+    footer ul .contact-f {
+        grid-area: contact;
+    }
+
+    footer ul .jobs-f {
+        grid-area: jobs;
+
+    }
+
+    footer ul .terms-f {
+        grid-area: terms;
+    }
+
+    footer ul .privacy-f {
+        grid-area: privacy;
+    }
+
+    footer ul .blog-f {
+        grid-area: blog;
+    }
+
+    footer ul .press-f {
+        grid-area: press;
+    }
+
+    footer .social {
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        gap: 6vw;
+    }
+}

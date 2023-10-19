@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open sans', sans-serif;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer; 
+}
+
+input {
+    border: 1px solid black;
+  
+
+}
+
+footer a {
+    color: #fff;
+}
