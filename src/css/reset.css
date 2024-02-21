@@ -27,7 +27,9 @@ input[type="submit"] {
 }
 
 input {
-    border: 1px solid black;
+    border-style: none ;
+    font-size: 1.8vw;
+    border: 1px solid rgb(116, 113, 113);
   
 
 }

@@ -8,7 +8,6 @@ body {
     font-size: 1.6rem;
 }
 
-
 /*                      ==================== HEADER ================*/
 header {
     display: flex;
@@ -48,27 +47,39 @@ header nav ul li a:hover {
 
 /*                      ============================= RESPONSIVE HEADER ================*/
 
-
 @media(max-width:768px) {
-
     .c-logo-header {
-
         width: 13rem;
     }
-
 }
 
 @media(max-width:440px) {
-
     .c-logo-header {
-
         width: 27vw;
     }
 
     header nav ul li a {
         font-size: 1.4rem;
     }
+}
 
+@media (min-width:1260px){
+    .c-logo-header {
+        width: 18vw;
+        margin-top: 3vh;
+    }
+
+    header nav ul li a {
+        font-size: 2vw;
+    }
+
+    header nav ul li a:hover {
+        font-size: 2.1vw;
+
+    }
+}
+
+@media (min-width:1920px){ 
 
 
 }
@@ -113,7 +124,10 @@ main {
 
 }
 
-
+.c-inf-main-1 .description-inf-1 form{
+    display: flex;
+    align-items: center;
+}
 
 .c-inf-main-1 .description-inf-1 form .input-register {
     padding-left: 0.5vw;
@@ -184,26 +198,22 @@ main {
     font-family: 'Open sans', sans-serif;
     width: 80%;
     font-size: 1.1vw;
-    color: var(--Light-Gray);
 }
 
 .c-inf-main-2 .description-inf-2 a {
+    width: max-content;
     color: var(--Moderate-Cyan);
-    width: 33%;
-
     text-shadow: 0px 0px 0.1px var(--Moderate-Cyan);
     transition: 0.3s ease-in-out;
     margin-bottom: 4vh;
+    border-bottom: solid 1px ;
     padding: 5px 0px;
-    /* Adicionar algum preenchimento para tornar a borda visível */
-    box-shadow: 0 2px 0 0 hsl(170, 45%, 43%);
-
 }
 
 .c-inf-main-2 .description-inf-2 a:hover {
     box-shadow: 0 2px 0 0hsla(170, 45%, 43%, 0.5);
     color: var(--Moderate-Cyan-op);
-    border-bottom: solid 1px var(--Moderate-Cyan-op);
+    border-bottom: solid 2px var(--Moderate-Cyan-op);
     text-shadow: 0px 0px 0.1px var(--Moderate-Cyan-op);
 }
 
@@ -221,6 +231,7 @@ main {
     width: 100%;
     margin: 0.5vh 0 1vh 0;
     font-size: 1vw;
+    letter-spacing: 0.2rem;
 }
 
 .c-inf-main-2 .description-inf-2 .quotes .conta {
@@ -243,7 +254,7 @@ main {
 
 .c-inf-main-2 .description-inf-2 .quotes .conta .user p {
     font-size: 1.1rem;
-    color: var(--Light-Gray);
+    
 }
 
 .c-inf-main-2 .c-illustration-info-2 {
@@ -254,25 +265,46 @@ main {
 
 .c-inf-main-2 .c-illustration-info-2 img {
     width: 70%;
-    height: 80%;
 
 }
 
 /*                    ================== Responsive Main  ======================  */
 
-@media (min-width:1920px) {
+@media (max-width:1920px) {
     .c-inf-main-1 .description-inf-1 h1 {
-
         font-size: 2.3vw;
     }
 
     .c-inf-main-1 .description-inf-1 form .input-register::placeholder {
-        font-size: 1vw;
+        font-size: 1.3vw;
 
     }
 
+    .c-inf-main-1 .description-inf-1 form .btn-info-1{
+        letter-spacing: 0.1vw;
+        font-size: 1.4vw;
+    }
+
     .c-inf-main-2 .description-inf-2 a {
-        width: 10vw;
+        font-size: 1.1vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes p {
+        font-size: 1.2vw;
+
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta img {
+        width: 3.5vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta .user h4{
+        letter-spacing: 3px;
+        font-size: 1.2vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta .user p {
+        font-size: 0.9vw;
     }
 
 }
@@ -281,6 +313,11 @@ main {
 
     .c-inf-main-1 .c-illustration-info-1 {
         width: 95%;
+    }
+
+    .c-inf-main-1 .description-inf-1 form .btn-info-1{
+        font-size: 1.4vw;
+     
     }
 
     .c-inf-main-2 .description-inf-2 h2 {
@@ -294,11 +331,6 @@ main {
         font-size: 1.3rem;
     }
 
-    .c-inf-main-2 .description-inf-2 a {
-
-        width: 19vw;
-
-    }
 
     .c-inf-main-2 .description-inf-2 .quotes p {
         font-size: 1.1vw;
@@ -307,7 +339,7 @@ main {
 
     .c-inf-main-2 .c-illustration-info-2 img {
         width: 85%;
-        height: 75%;
+        
     }
 
 }
@@ -327,9 +359,7 @@ main {
     }
 
     .c-inf-main-1 .description-inf-1 form .input-register {
-
         width: 26vw;
-
     }
 
     .c-inf-main-1 .description-inf-1 form .btn-info-1 {
@@ -361,9 +391,6 @@ main {
         font-size: 1.2rem;
     }
 
-    .c-inf-main-2 .description-inf-2 a {
-        width: 22vw;
-    }
 
     .c-inf-main-2 .description-inf-2 .quotes {
 
@@ -380,11 +407,8 @@ main {
         position: relative;
         right: 5vw;
         bottom: 4vh;
-        width: 110%;
-        height: 65%;
+        width: 100%;
     }
-
-
 
 }
 
@@ -499,7 +523,7 @@ main {
 
     .c-inf-main-2 .description-inf-2 a {
         margin-top: 4vh;
-        width: 34vw;
+        font-size: 2vw;
     }
 
     .c-inf-main-2 .description-inf-2 .quotes {
@@ -515,6 +539,15 @@ main {
     .c-inf-main-2 .description-inf-2 .quotes .conta img {
         border-radius: 50%;
         width: 4.5vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta .user h4 {
+        font-size: 1.5vw;
+    }
+
+    .c-inf-main-2 .description-inf-2 .quotes .conta .user p{
+        font-size: 1.2vw;
+        letter-spacing: 0;
     }
 
 }
@@ -601,6 +634,7 @@ main {
 
 .container-register .form-register .input-register::placeholder {
     padding-left: 0.5vw;
+    font-size: 1.3vw;
 }
 
 .container-register .form-register .btn-register-1 {
@@ -619,10 +653,38 @@ main {
 
 }
 
-@media (max-width:1260px) {
+/* Responsive container Registro */
+
+@media (min-width:1261px) {
+
+    .container-register .description-register h4 {
+        font-size: 2vw;
+    }
 
     .container-register .description-register p {
-        font-size: 1.2rem;
+        font-size: 1.2vw;
+  
+    }
+
+    .container-register .form-register .input-register::placeholder {
+    
+        font-size: 1.1vw;
+    }
+
+    .container-register .form-register .btn-register-1 {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width:1260px) {
+
+    .container-register .description-register h4 {
+        font-size: 1.7vw;
+        letter-spacing: 1px;
+    }
+
+    .container-register .description-register p {
+        font-size: 1.3vw;
         width: 85%;
     }
 
@@ -632,13 +694,25 @@ main {
 }
 
 @media (max-width:1080px) {
+
+    .container-register .description-register h4 {
+        font-size: 2vw;
+    }
+
     .container-register .description-register p {
+        font-size: 1.5vw;
         width: 100%;
     }
 
+    .container-register .form-register .input-register::placeholder {
+    
+        font-size: 1.5vw;
+    }
+
     .container-register .form-register .btn-register-1 {
-        font-size: 1.2rem;
-        width: 17vw;
+        font-size: 1.4rem;
+        font-weight: bold;
+        width: 20vw;
     }
 }
 
@@ -731,8 +805,6 @@ footer {
 
 footer .logo-footer {
     grid-area: logo-f;
-    /* filter: hue-rotate(200deg);
-    filter: invert(100%); */
     filter: grayscale(100%) brightness(0) invert(100%);
 }
 
@@ -818,6 +890,23 @@ footer .social i:hover {
     footer .contato .email-f {
         padding-left: 2vw;
     }
+}
+
+@media (min-width:1260px) {
+
+    footer .sobre-empresa {
+        font-size: 1.3vw;
+    }
+
+    footer .contato {
+        font-size: 1.3vw;
+    }
+
+    footer .social {
+        font-size: 1.6vw;
+    }
+
+  
 }
 
 @media(max-width:768px) {
